@@ -1,19 +1,7 @@
-# 네이버 로그인 페이지 구현
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
 
-로그인과 비밀번호를 정확히 입력했을 때 welcome 페이지로 넘어갈 수 있도록 코드 로직을 작성합니다.
-
-
----
-- [x] 재사용 가능한 함수를 분리하고 함수를 중심으로 설계하는 방법에 대해 학습합니다.
-
-
-- 제출 구글 폼
-https://docs.google.com/forms/d/e/1FAIpQLScpXQBd8pTPlCaiqxS_QBXRjhRqHry3pA7MDC-7DhKvAnRR6Q/viewform
-
-
-### Mission01의 목표
+# Mission01 - 로그인 구현하기 
 
 * 이메일과 패스워드 형식에 맞는지 정규식을 통해서 체크하고 그에 맞게 조건문 처리
 * 올바른 이메일과 패스워드를 입력 했는지 체크하고 그에 맞게 조건문 처리
@@ -32,9 +20,9 @@ https://docs.google.com/forms/d/e/1FAIpQLScpXQBd8pTPlCaiqxS_QBXRjhRqHry3pA7MDC-7
 
 2-2. 아이디와 패스워드가 올바르지 않을 경우<br>
 ![20240204_144717](https://github.com/bedlam1/homework/assets/90903692/304a511b-b808-47da-81cc-a3d93a8f7515)
-<br><br>
-
-### 코드
 
 
 
+
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />

@@ -51,6 +51,9 @@ function idCheck(){
 
   if(this.value === user.id) id_valid = true;
   else id_valid = false;
+
+  if(this.value === user.id) id_valid = true;
+  else id_valid = false;
   
 }
 function pwCheck(){
@@ -61,6 +64,8 @@ function pwCheck(){
   else{
     pwField.classList.add('is--invalid');
   }
+  if(this.value === user.pw) pw_valid = true;
+  else pw_valid = false;
   if(this.value === user.pw) pw_valid = true;
   else pw_valid = false;
 }
@@ -76,6 +81,7 @@ function submitCheck(e){
   
   console.log('제출!!');
   if(id_valid && pw_valid){
+  if(id_valid && pw_valid){
     location.href = 'welcome.html';
   }
   else {
@@ -88,5 +94,7 @@ idField.addEventListener('input', idCheck);
 pwField.addEventListener('input', pwCheck);
 
 submit.addEventListener('click',submitCheck);
+
+
 
 
