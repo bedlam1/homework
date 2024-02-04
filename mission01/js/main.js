@@ -13,23 +13,12 @@ const user = {
 
 */
 
-function emailReg(text){
+const idField = document.querySelector('#userEmail');
+const pwField = document.querySelector('#userPassword');
+const submit = document.querySelector('.btn-login');
 
-}
-
-function pwReg(text){
-
-}
-
-
-
-
-
-
-
-
-
-
+let id_valid = false;
+let pw_valid = false
 
 function emailReg(text){
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -42,13 +31,49 @@ function pwReg(text){
   return re.test(String(text).toLowerCase());
 }
 
+function idCheck(){
+  if(emailReg(this.value)){
+    console.log('success');
+    idField.classList.remove('is--invalid');
+    if(this.value === user.id) id_valid = true;
+  }
+  else{
+    idField.classList.add('is--invalid');
+    if(this.value !== user.id) id_valid = false;
+  }
+  
+}
+
+function pwCheck(){
+  if(pwReg(this.value)){
+    console.log('success');
+    pwField.classList.remove('is--invalid');
+    if(this.value === user.pw) pw_valid = true;
+  }
+  else{
+    pwField.classList.add('is--invalid');
+    if(this.value === user.pw) pw_valid = false;
+  }
+  
+}
+
+function submitCheck(e){
+  
+  e.preventDefault();
+  
+  console.log('제출!!');
+  if(id_valid && pw_valid === true){
+    location.href = 'welcome.html';
+  }
+  else {
+    alert('아이디와 비밀번호를 다시 확인해주세요');
+  }
+}
 
 
+idField.addEventListener('input', idCheck);
+pwField.addEventListener('input', pwCheck);
 
-
-
-
-
-
+submit.addEventListener('click',submitCheck);
 
 
