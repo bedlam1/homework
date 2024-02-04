@@ -51,10 +51,6 @@ function idCheck(){
 
   if(this.value === user.id) id_valid = true;
   else id_valid = false;
-
-  if(this.value === user.id) id_valid = true;
-  else id_valid = false;
-  
 }
 function pwCheck(){
   if(pwReg(this.value)){
@@ -64,8 +60,6 @@ function pwCheck(){
   else{
     pwField.classList.add('is--invalid');
   }
-  if(this.value === user.pw) pw_valid = true;
-  else pw_valid = false;
   if(this.value === user.pw) pw_valid = true;
   else pw_valid = false;
 }

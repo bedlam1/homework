@@ -40,8 +40,18 @@ https://docs.google.com/forms/d/e/1FAIpQLScpXQBd8pTPlCaiqxS_QBXRjhRqHry3pA7MDC-7
 
 <br><br>
 
-### 코드
+### 코드<br>
+* text를 인자로 받아 문자열로 바꾼뒤 소문자로 변환한다. 그리고 이메일과 패스워드의 형식이 맞는지 각각의 정규식을 통해 체크한뒤 형식이 맞으면 true, 맞지 않으면 false를 반환한다.<br> 
+```
+function emailReg(text){
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-
-
-
+  return re.test(String(text).toLowerCase())
+}
+function pwReg(text){
+  const re = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^*+=-]).{6,16}$/;
+  return re.test(String(text).toLowerCase());
+}
+```
+<br>
+* 
