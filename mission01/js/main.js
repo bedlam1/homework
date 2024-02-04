@@ -81,7 +81,6 @@ function submitCheck(e){
   
   console.log('제출!!');
   if(id_valid && pw_valid){
-  if(id_valid && pw_valid){
     location.href = 'welcome.html';
   }
   else {
