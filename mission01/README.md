@@ -22,15 +22,21 @@ https://docs.google.com/forms/d/e/1FAIpQLScpXQBd8pTPlCaiqxS_QBXRjhRqHry3pA7MDC-7
 ### 로그인 화면
 <br><br>
 1-1. 초기화면<br>
-   
+   ![init_display](https://github.com/bedlam1/homework/assets/90903692/b7503b9e-4e27-4975-9e22-b642b24732c6)
+
 
 1-2. 로그인 성공 후 화면<br>
+![welcome_display](https://github.com/bedlam1/homework/assets/90903692/94e963db-8fb4-40b3-b104-cb25b5e23a44)
 
 
 2-1. 아이디와 패스워드 형식이 안맞을 경우<br>
+![invalid1](https://github.com/bedlam1/homework/assets/90903692/50175e2e-1f3c-4807-b3f1-b931b0f24f37)
+
 
 
 2-2. 아이디와 패스워드가 올바르지 않을 경우<br>
+![invalid2](https://github.com/bedlam1/homework/assets/90903692/79e963b5-1e52-43ea-9d48-1821f9f441b1)
+
 
 <br><br>
 
