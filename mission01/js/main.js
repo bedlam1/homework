@@ -1,4 +1,4 @@
-
+// 유저 정보
 const user = {
   id:'asd@naver.com',
   pw:'spdlqj123!@'
@@ -20,16 +20,25 @@ const submit = document.querySelector('.btn-login');
 let id_valid = false;
 let pw_valid = false;
 
+/**
+ * 정규식을 통해 이메일과 패스워드 형식 체크
+ * @param {string} text 
+ * @returns {boolean} 
+ */
+
 function emailReg(text){
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   return re.test(String(text).toLowerCase())
 }
-
 function pwReg(text){
   const re = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^*+=-]).{6,16}$/;
   return re.test(String(text).toLowerCase());
 }
+
+/**
+ * 정규식과 user의 정보를 통해 다음 화면으로 넘어갈수있는지 체크
+ */
 
 function idCheck(){
   if(emailReg(this.value)){
@@ -44,7 +53,6 @@ function idCheck(){
   else id_valid = false;
   
 }
-
 function pwCheck(){
   if(pwReg(this.value)){
     console.log('success');
@@ -56,6 +64,11 @@ function pwCheck(){
   if(this.value === user.pw) pw_valid = true;
   else pw_valid = false;
 }
+
+/**
+ * 아이디와 패스워드가 invalid하면 아이디와 비밀번호를 다시 확인해달라는 알림
+ * 올바르면 welcome.html로 화면 전환
+ */
 
 function submitCheck(e){
   
