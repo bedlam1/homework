@@ -18,7 +18,7 @@ const pwField = document.querySelector('#userPassword');
 const submit = document.querySelector('.btn-login');
 
 let id_valid = false;
-let pw_valid = false
+let pw_valid = false;
 
 function emailReg(text){
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
