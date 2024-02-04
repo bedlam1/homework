@@ -9,7 +9,7 @@
 
 ### 로그인 화면
 <br><br>
-1. 초기화면
+1. 초기화면<br>
    ![20240204_143321](https://github.com/bedlam1/homework/assets/90903692/2f3cefe6-966e-4337-b8ff-71aabe70b734)
 
 
