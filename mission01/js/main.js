@@ -23,7 +23,7 @@ let pw_valid = false;
 function emailReg(text){
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  return re.test(String(text).toLowerCase());
+  return re.test(String(text).toLowerCase())
 }
 
 function pwReg(text){
@@ -35,12 +35,13 @@ function idCheck(){
   if(emailReg(this.value)){
     console.log('success');
     idField.classList.remove('is--invalid');
-    if(this.value === user.id) id_valid = true;
   }
   else{
     idField.classList.add('is--invalid');
-    if(this.value !== user.id) id_valid = false;
   }
+
+  if(this.value === user.id) id_valid = true;
+  else id_valid = false;
   
 }
 
@@ -48,13 +49,12 @@ function pwCheck(){
   if(pwReg(this.value)){
     console.log('success');
     pwField.classList.remove('is--invalid');
-    if(this.value === user.pw) pw_valid = true;
   }
   else{
     pwField.classList.add('is--invalid');
-    if(this.value === user.pw) pw_valid = false;
   }
-  
+  if(this.value === user.pw) pw_valid = true;
+  else pw_valid = false;
 }
 
 function submitCheck(e){
@@ -75,5 +75,7 @@ idField.addEventListener('input', idCheck);
 pwField.addEventListener('input', pwCheck);
 
 submit.addEventListener('click',submitCheck);
+
+
 
 
