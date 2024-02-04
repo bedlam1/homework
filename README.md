@@ -5,6 +5,7 @@
 
 * 이메일과 패스워드 형식에 맞는지 정규식을 통해서 체크하고 그에 맞게 조건문 처리
 * 올바른 이메일과 패스워드를 입력 했는지 체크하고 그에 맞게 조건문 처리
+* mission01 readme.md파일 링크(https://github.com/bedlam1/homework/blob/main/mission01/README.md)
 <br><br>
 
 
