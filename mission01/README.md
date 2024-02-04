@@ -1,5 +1,3 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
-
 # 네이버 로그인 페이지 구현
 
 ---
@@ -35,6 +33,4 @@ https://docs.google.com/forms/d/e/1FAIpQLScpXQBd8pTPlCaiqxS_QBXRjhRqHry3pA7MDC-7
 2-2. 아이디와 패스워드가 올바르지 않을 경우<br>
 ![20240204_144717](https://github.com/bedlam1/homework/assets/90903692/304a511b-b808-47da-81cc-a3d93a8f7515)
 
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
 
