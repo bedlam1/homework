@@ -52,10 +52,9 @@ function pwReg(text){
   const re = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^*+=-]).{6,16}$/;
   return re.test(String(text).toLowerCase());
 }
-```
-<br>
+```<br><br>
 * 형식을 체크한뒤 user와 이메일과 패스워드가 일치하는지 체크한다.
-<br>
+<br><br>
 ```
 function idCheck(){
   if(emailReg(this.value)){
@@ -81,9 +80,9 @@ function pwCheck(){
   else pw_valid = false;
 }
 ```
-<br>
+<br><br>
 * 모두 일치할 경우 welcom.html로 넘어가고 일치하지않을경우는 아이디와 비밀번호를 다시 확인해달라는 문구를 유저에게 알림 메시지를 보내준다.
-<br>
+<br><br>
 ```
 function submitCheck(e){
   
@@ -98,6 +97,6 @@ function submitCheck(e){
   }
 }
 ```
-<br>
-### 후기<br>
+<br><br>
+### 후기<br><br>
 * readme.md 파일을 잘 써보질 않아서 좀 혼란 스러웠는데 백틱을 쓰면 디스코드와 마찬가지로 코드를 넣을수 있다는것을 알게되었다. 좀 아쉬운게 이미지 파일을 올릴때 과거에 했던 방법이 있었는데 그 방법이 떠오르질 않아서 구글링도 해가면서 찾아봤는데 찾질 못해서 좀 그랬다.
