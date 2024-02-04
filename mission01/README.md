@@ -54,7 +54,8 @@ function pwReg(text){
 }
 ```
 <br>
-* 형식을 체크한뒤 user와 이메일과 패스워드가 일치하는지 체크한다.<br>
+* 형식을 체크한뒤 user와 이메일과 패스워드가 일치하는지 체크한다.
+<br>
 ```
 function idCheck(){
   if(emailReg(this.value)){
@@ -81,7 +82,8 @@ function pwCheck(){
 }
 ```
 <br>
-* 모두 일치할 경우 welcom.html로 넘어가고 일치하지않을경우는 아이디와 비밀번호를 다시 확인해달라는 문구를 유저에게 알림 메시지를 보내준다.<br>
+* 모두 일치할 경우 welcom.html로 넘어가고 일치하지않을경우는 아이디와 비밀번호를 다시 확인해달라는 문구를 유저에게 알림 메시지를 보내준다.
+<br>
 ```
 function submitCheck(e){
   
