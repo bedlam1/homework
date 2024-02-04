@@ -53,5 +53,5 @@ function pwReg(text){
   return re.test(String(text).toLowerCase());
 }
 ```
-
-
+<br>
+* 
