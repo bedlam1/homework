@@ -54,4 +54,48 @@ function pwReg(text){
 }
 ```
 <br>
-* 
+* 형식을 체크한뒤 user와 이메일과 패스워드가 일치하는지 체크한다.<br>
+```
+function idCheck(){
+  if(emailReg(this.value)){
+    console.log('success');
+    idField.classList.remove('is--invalid');
+  }
+  else{
+    idField.classList.add('is--invalid');
+  }
+
+  if(this.value === user.id) id_valid = true;
+  else id_valid = false;
+}
+function pwCheck(){
+  if(pwReg(this.value)){
+    console.log('success');
+    pwField.classList.remove('is--invalid');
+  }
+  else{
+    pwField.classList.add('is--invalid');
+  }
+  if(this.value === user.pw) pw_valid = true;
+  else pw_valid = false;
+}
+```
+<br>
+* 모두 일치할 경우 welcom.html로 넘어가고 일치하지않을경우는 아이디와 비밀번호를 다시 확인해달라는 문구를 유저에게 알림 메시지를 보내준다.<br>
+```
+function submitCheck(e){
+  
+  e.preventDefault();
+  
+  console.log('제출!!');
+  if(id_valid && pw_valid){
+    location.href = 'welcome.html';
+  }
+  else {
+    alert('아이디와 비밀번호를 다시 확인해주세요');
+  }
+}
+```
+<br>
+### 후기<br>
+* readme.md 파일을 잘 써보질 않아서 좀 혼란 스러웠는데 백틱을 쓰면 디스코드와 마찬가지로 코드를 넣을수 있다는것을 알게되었다. 좀 아쉬운게 이미지 파일을 올릴때 과거에 했던 방법이 있었는데 그 방법이 떠오르질 않아서 구글링도 해가면서 찾아봤는데 찾질 못해서 좀 그랬다.
