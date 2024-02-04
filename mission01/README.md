@@ -52,7 +52,7 @@ function pwReg(text){
   const re = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^*+=-]).{6,16}$/;
   return re.test(String(text).toLowerCase());
 }
-```<br><br>
+<br><br>
 * 형식을 체크한뒤 user와 이메일과 패스워드가 일치하는지 체크한다.
 <br><br>
 ```
