@@ -62,7 +62,7 @@ function submitCheck(e){
   e.preventDefault();
   
   console.log('제출!!');
-  if(id_valid && pw_valid === true){
+  if(id_valid && pw_valid){
     location.href = 'welcome.html';
   }
   else {
