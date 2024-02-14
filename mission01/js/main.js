@@ -13,6 +13,10 @@ const user = {
 
 */
 
+/**
+ * $idInput >> $ html에서 가져온 암묵적인 명시(제이쿼리에서 익숙하신분들이 쓴다.)
+ */
+
 const idField = document.querySelector('#userEmail');
 const pwField = document.querySelector('#userPassword');
 const submit = document.querySelector('.btn-login');
